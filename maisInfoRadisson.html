@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d3b84b1d10.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pontos Cinematográficos</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <nav>
+      <ul>
+        <a href="#" title="logo">
+          <div class="logo"> </div>
+        </a>
+        <li><a href="Index.html" id="botoesmenu"> Hotéis</a></li>
+        <li><a href="Cultura.html" id="botoesmenu"> Cultura</a></li>
+        <li><a href="Vida-Noturna.html" id="botoesmenu">Vida Noturna</a></li>
+        <li><a href="Gastronomia.html" id="botoesmenu"> Gastronomia</a></li>
+        <li><a href="#" id="botoesmenu">Acessibilidade</a>
+          <ul>
+            <li><button onclick="diminuoFonte()" id="botoesAcessibilidade">Diminuir Fontes</button></li>
+            <li><button onclick="aumentoFonte()" id="botoesAcessibilidade">Aumentar Fontes</button></li>
+            <li><button onclick="ligaContraste()" id="botoesAcessibilidade">Ligar Alto Contraste</button></li>
+            <li><button onclick="desligaContraste()" id="botoesAcessibilidade">Desligar Alto Contraste</button></li>
+            <li><button onclick="fonteAcessivel()" id="botoesAcessibilidade">Fonte Acessível</button></li>
+            <li><button onclick="fontePadrao()" id="botoesAcessibilidade">Fonte Padrão</button></li>
+          </ul>
+        </li>
+      </ul>
+      
+
+    </nav>
+  </header>
+
+  <div class="botaoControleFont funcoesAcessibilidade">
+    <button onclick="diminuoFonte()">Diminuir Fontes</button>
+
+    <button onclick="aumentoFonte()">Aumentar Fontes</button>
+  </div>
+
+
+  <div class="botaoControleCor funcoesAcessibilidade">
+    <button onclick="ligaContraste()">Liga Alto Contraste</button>
+
+    <button onclick="desligaContraste()">Desliga Alto Contraste</button>
+  </div>
+
+  <div class="botaoControleFonte funcoesAcessibilidade">
+    <button onclick="fonteAcessivel()">Altera para Fonte Acessível</button>
+
+    <button onclick="fontePadrao()">Altera para Fonte Padrão</button>
+  </div>
+
+  <div class="container">
+
+
+
+    <div class="main-container">
+
+      <h1>Radisson Hotel Paulista
+      </h1>
+
+      <div class="pontosCinematograficos">
+
+
+        <div class="pontosCinematograficosItem" id="pontosCinematograficosInternal">
+          <section>
+            <div class="pontoCinematograficoImageInternal imageBanner6" id="internalImage"></div>
+          </section>
+          <section class="detailsSection">
+            <div class="pontoCinematograficoDetailsInternal">
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoTipoIcon tipoParque"></div>
+                <div class="pontoCinematograficoTipoText">Hotel</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Valor da diária:</span> $761,00</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Telefone:</span>+55 (11)2627-1000 </div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Público-alvo:</span> todos</div>
+              </div>
+
+              <div class="pontoCinematograficoAberto">
+                <div class="pontoCinematograficoAbertoIcon"></div>
+                <div class="pontoCinematograficoAbertoText">Aberto</div>
+              </div>
+
+              <div class="pontoCinematograficoAberto">
+                <div class="pontoCinematograficoPetIcon noPetIcon"></div>
+                <div class="pontoCinematograficoText">Pet Friendly</div>
+              </div>
+              <div class="pontoCinematograficoRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <div class=""></div>
+              </div>
+          </section>
+
+
+        </div>
+        <section class="imageGalery">
+          <galeria-imagens>
+            <img src="./images/ibis/img1.jpeg" />
+            <img src="./images/ibis/img2.jpeg" />
+            <img src="./images/ibis/img3.jpeg" />
+            <img src="./images/ibis/img4.jpeg" />
+            <img src="./images/ibis/img5.jpeg" />
+            <img src="./images/ibis/img6.jpeg" />
+          </galeria-imagens>
+        </section>
+
+
+        <div class="hotelContent" id="contentInternal">
+
+          <div class="hotelResumo" id="resumoInternal">
+
+
+            O Radisson São Paulo Paulista disponibiliza uma piscina exterior e acesso Wi-Fi gratuito em todas as áreas
+            precisamente no centro financeiro e comercial de São Paulo, apenas a 1 quarteirão da Avenida Paulista, a 150
+            metros do SESC Paulista e a 700 metros da Casa do Japão.
+
+            Os quartos espaçosos e com uma decoração moderna incluem móveis em madeira, ar condicionado, acesso gratuito
+            à Internet, uma secretária, televisão de ecrã plano com canais por cabo, telefone e um cofre. A casa de
+            banho privativa fornece produtos de higiene pessoal gratuitos e um secador de cabelo. Alguns quartos também
+            apresentam produtos de higiene pessoal Rituals. Como cortesia, os hóspedes são recebidos com uma garrafa de
+            água gratuita.
+
+            <p>Conveniências</p>
+            Os hóspedes podem desfrutar de um exclusivo menu especial do mundialmente aclamado Chef Christophe Besse no
+            restaurante internacional no local, o All Seasons. É servido um generoso buffet de pequeno-almoço no hotel
+            diariamente, composto por uma ampla variedade de produtos de pastelaria, bolos, sumos, pães, bebidas quentes
+            e frias, fruta, vegetais, queijos e iguarias japonesas.
+
+            Também estão disponíveis eficientes comodidades de negócios e salas de reuniões no Radisson São Paulo
+            Paulista. Uma equipa de funcionários que fala inglês e japonês está sempre disponível para fornecer
+            assistência 24 horas aos hóspedes. O hotel também providencia um ginásio bem equipado para os hóspedes que
+            gostam de fazer exercício.
+
+
+            <p> Localização e mobilidade</p>
+            A poucos passos, podem ser alcançados vários restaurantes, lojas e bares de alta qualidade. O histórico
+            edifício Casa das Rosas fica ao virar da esquina do hotel, enquanto o Pátio Paulista se situa a 2
+            quarteirões. O hotel encontra-se a 1,5 km do MASP - Museu de Arte de São Paulo, a 2,5 km do Parque do
+            Ibirapuera e a 11 km da Expo São Paulo. O aeroporto mais próximo é o Aeroporto de Congonhas, a 7,5 km do
+            Radisson. O Centro da Cidade fica a 15 minutos de carro do hotel.
+
+
+          </div>
+
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.466697705294!2d-46.627825084494624!3d-23.515711065794395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58859029337b%3A0x1128b91971707df1!2sibis%20Styles%20S%C3%A3o%20Paulo%20Anhembi!5e0!3m2!1spt-BR!2sbr!4v1664808547572!5m2!1spt-BR!2sbr"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://putlocker-is.org"></a><br>
+
+            </div>
+          </div>
+          <section class="acesseSiteWrapper"> <a
+              href="https://www.radissonhotelsamericas.com/pt-br/hotels/radisson-sao-paulo-paulista" target="_blank">
+              <div class="acesseSite">Acesse o Site</div>
+            </a></section>
+
+          <p>Comentários</p>
+          <comentarios>
+            <section class="notasComentarios">
+            <label for="Nota" class="textos">Avaliação</label>
+      
+            <input type="range" id="nota" min="0" max="5" step="1" list="notas" class="nota">
+            <datalist id="notas">
+              <option value="0" label="0"></option>
+              <option value="1" label="1"></option>
+              <option value="2" label="2"></option>
+              <option value="3" label="3"></option>
+              <option value="4" label="4"></option>
+              <option value="5" label="5"></option>
+      
+            </datalist>
+          </section>
+                  <textarea type="text" name="Nome" size="100" placeholder="Deixe seu comentário" class="inputComentario"></textarea>
+                 <div class="enviarWrapper"> <button id="enviar" type="submit">Enviar</button></div>
+          </comentarios>
+          <div class="comentario" id="comentarioInternal">
+            <h4>João</h2>
+              Atendimento dos funcionários, muito solícitos.
+              Serviço de quarto 24h.
+              Suítes novas e espaçosas
+              Academia muito boa.
+              O hotel possui um pequeno shopping em anexo
+              para os turistas que vêm a negócios.
+
+              <div class="pontoCinematograficoRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <div class=""></div>
+              </div>
+          </div>
+        </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d3b84b1d10.js" crossorigin="anonymous"></script>
+  <script src="scripts/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gastronomia</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <nav>
+      <ul>
+        <a href="#" title="logo">
+          <div class="logo"> </div>
+        </a>
+        <li><a href="Index.html" id="botoesmenu"> Hotéis</a></li>
+        <li><a href="Cultura.html" id="botoesmenu"> Cultura</a></li>
+        <li><a href="Vida-Noturna.html" id="botoesmenu">Vida Noturna</a></li>
+        <li><a href="Gastronomia.html" id="botoesmenu"> Gastronomia</a></li>
+        <li><a href="#" id="botoesmenu">Acessibilidade</a>
+          <ul>
+            <li><button onclick="diminuoFonte()" id="botoesAcessibilidade">Diminuir Fontes</button></li>
+            <li><button onclick="aumentoFonte()" id="botoesAcessibilidade">Aumentar Fontes</button></li>
+            <li><button onclick="ligaContraste()" id="botoesAcessibilidade">Ligar Alto Contraste</button></li>
+            <li><button onclick="desligaContraste()" id="botoesAcessibilidade">Desligar Alto Contraste</button></li>
+            <li><button onclick="fonteAcessivel()" id="botoesAcessibilidade">Fonte Acessível</button></li>
+            <li><button onclick="fontePadrao()" id="botoesAcessibilidade">Fonte Padrão</button></li>
+          </ul>
+        </li>
+      </ul>
+      
+
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <main class="main-container">
+
+      <section class="busca">
+
+        <section class="buscaHoteis filtros">
+          <input id="searchBar" type="text" class="inputBusca" placeholder="Digite o nome do restaurante ou cidade" onkeyup="searchBox()"> <button
+            id="buscar" onclick="searchReset()" type="submit"><span id="fontLabel">Reiniciar busca</span></button>
+        </section>
+
+
+        <form name="busca" action="" method="post">
+
+          <section>
+            <label for="Refeições" class="textos"> Refeições: </label>
+            <label for="" class="textos">
+              <input type="radio" name="refeição" id="refeição1" required class="radio">
+              Café da Manhã</label>
+            <label for="" class="textos">
+              <input type="radio" name="refeição" id="refeição2">
+              Brunch</label>
+            <label for="" class="textos">
+              <input type="radio" name="refeição" id="refeição3">
+              Almoço</label>
+            <label for="" class="textos">
+              <input type="radio" name="refeição" id="refeição3">
+              Jantar</label>
+            ||
+            <label for="cozinha">Cozinha</label>
+            <input list="cozinha_sp" id="cozinha" name="cozinha">
+            <datalist id="cozinha_sp">
+              <option value="Africana"></option>
+              <option value="Alemã"></option>
+              <option value="Americana"></option>
+              <option value="Argelina"></option>
+              <option value="Argentina"></option>
+              <option value="Asiática"></option>
+              <option value="Asiática central">
+              <option value="Bar"></option>
+              <option value="Brasileira"></option>
+              <option value="Britânica"></option>
+              <option value="Café"></option>
+              <option value="Centro da Itália"></option>
+              <option value="Chilena"></option>
+              <option value="Chinesa"></option>
+              <option value="Churrasco"></option>
+              <option value="Colombiana"></option>
+              <option value="Comida de rua"></option>
+              <option value="Contemporânea"></option>
+              <option value="Coreana"></option>
+              <option value="Delicatéssen"></option>
+              <option value="Docerias japonesas"></option>
+              <option value="Espanhola"></option>
+              <option value="Europeia"></option>
+              <option value="Europeia central"></option>
+              <option value="Fast food"></option>
+              <option value="Francesa"></option>
+              <option value="Frutas"></option>
+              <option value="Frutos do mar"></option>
+              <option value="Grega"></option>
+              <option value="Grelhados"></option>
+              <option value="Indiana"></option>
+              <option value="Indonésia"></option>
+              <option value="Internacional"></option>
+              <option value="Israelense"></option>
+              <option value="Italiana"></option>
+              <option value="Jamaicana"></option>
+              <option value="Japonesa"></option>
+              <option value="Lanchonete"></option>
+              <option value="Latina"></option>
+              <option value="Leste europeia"></option>
+              <option value="Marroquina"></option>
+              <option value="Mediterrânea"></option>
+              <option value="Mexicana"></option>
+              <option value="Mongol"></option>
+              <option value="Nativa americana"></option>
+              <option value="Norte da Itália"></option>
+              <option value="Nápoles"></option>
+              <option value="Oriente Médio"></option>
+              <option value="Persa"></option>
+              <option value="Peruana"></option>
+              <option value="Pizza"></option>
+              <option value="Portuguesa"></option>
+              <option value="Pub"></option>
+              <option value="Pub com cerveja artesanal"></option>
+              <option value="Pub com restaurante"></option>
+              <option value="Restaurante com bar"></option>
+              <option value="Restaurantes que servem cerveja"></option>
+              <option value="Saudável"></option>
+              <option value="Sopa"></option>
+              <option value="Steakhouse"></option>
+              <option value="Sushi"></option>
+              <option value="Tailandesa"></option>
+              <option value="Taiwan"></option>
+              <option value="Vietnamita"></option>
+              <option value="Wine Bar"></option>
+              <option value="Árabe"></option>
+  
+  
+  
+  
+            </datalist>
+
+            
+          </section>
+          <section class="filtros">
+            
+            <label for="">Preço</label>
+            <label for="">
+              <input type="checkbox" name="preço" id="preço1">
+              $</label>
+            <label for="">
+              <input type="checkbox" name="preço" id="preço1">
+              $$</label>
+            <label for="">
+              <input type="checkbox" name="preço" id="preço1">
+              $$$</label>
+            <label for="">
+              <input type="checkbox" name="preço" id="preço1">
+              $$$$</label>       
+            
+              ||
+
+            <label for="Nota" class="textos">Distância Máxima</label>
+            <input type="range" id="distancia" min="0" max="6" step="1" list="distancia">
+
+            <datalist id="distancia">
+              <option value="0" label="5"></option>
+              <option value="1" label="10"></option>
+              <option value="2" label="15"></option>
+              <option value="3" label="20"></option>
+              <option value="4" label="30"></option>
+              <option value="5" label="40"></option>
+              <option value="6" label="50"></option>
+            </datalist>
+
+            <label for="Nota" class="textos">Qualificação</label>
+
+            <input type="range" id="nota" min="0" max="5" step="1" list="notas" class="nota">
+            <datalist id="notas">
+              <option value="0" label="0"></option>
+              <option value="1" label="1"></option>
+              <option value="2" label="2"></option>
+              <option value="3" label="3"></option>
+              <option value="4" label="4"></option>
+              <option value="5" label="5"></option>
+
+            </datalist>
+          </section>
+
+          </p>
+
+
+        </form>
+      </section>
+
+      <h1 id="fontLabel">RESTAURANTES EM SÃO PAULO</h1>
+
+
+
+      <section class="pontosCinematograficos">
+        <!-- início Dona Firmina Pizzaria -->
+        <article class="pontosCinematograficosItem">
+          <a href="maisInfoDonaFirmina.html">
+            <div class="pontoCinematograficoImage imageGastronomia01"></div>
+          </a>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoParque"></div>
+              <div class="pontoCinematograficoTipoText">Pizza</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon fechadoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Dona Firmina Pizzaria
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O Sheraton São Paulo WTC Hotel oferece 298 apartamentos com alto padrão de conforto e os melhores serviços
+              de hotelaria de luxo brasileira.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Dona Firmina Pizzaria -->
+
+        <!-- início Fuego Celeste Parrillada -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageGastronomia02"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Steakhouse</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Fuego Celeste Parrillada
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Com uma impressionante arquitetura e uma decoração elegante, o Renaissance São Paulo Hotel, de 5 estrelas.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Fuego Celeste Parrillada -->
+
+        <!-- início Tadashii Japanese Restaurant -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageGastronomia03"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Japonesa</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Tadashii Japanese Restaurant
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O Palácio Tangará - an Oetker Collection Hotel foi construído nos arredores do famoso Parque Burle Marx. O
+              hotel dispõe de 141 quartos espaçosos, incluindo 59 suites.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Tadashii Japanese Restaurant -->
+
+        <!-- início Varanda Jardins -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageGastronomia04"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoOutros"></div>
+              <div class="pontoCinematograficoTipoText">Brasileira</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Varanda Jardins
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Os hóspedes podem desfrutar de uma excelente localização no popular Bairro dos Jardins, em São Paulo, ao
+              ficar hospedados no Mercure Sao Paulo Pamplona, que fica ao lado da Avenida 9 de Julho e a 800 metros da
+              Avenida Paulista.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Varanda Jardins -->
+
+        <!-- início Wanderlust Bar e Cozinha -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageGastronomia05"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoTeatro"></div>
+              <div class="pontoCinematograficoTipoText">Brasileira</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Wanderlust Bar e Cozinha
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O Ibis Styles São Paulo Anhembi está localizado na área de Santana, em São Paulo. Há acesso Wi-Fi
+              gratuito.
+
+              Cada quarto apresenta uma temática de aviação e inclui ar condicionado, uma televisão de ecrã plano e um
+              minibar.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Wanderlust Bar e Cozinha -->
+
+        <!-- início Simas Bar E Drinkeria -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageGastronomia06"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Bar</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Simas Bar E Drinkeria
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O Radisson São Paulo Paulista disponibiliza uma piscina exterior e acesso Wi-Fi gratuito em todas as
+              áreas precisamente no centro financeiro e comercial de São Paulo.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Simas Bar E Drinkeria -->
+
+        <!-- início I LOVE BURGER -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageGastronomia07"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Lanchonete</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              I LOVE BURGER
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O Comfort Ibirapuera está localizado no badalado bairro de Moema, em São Paulo, em frente à Estação de
+              Metro Moema e apenas a 1,5 km do Parque do Ibirapuera. O hotel disponibiliza um ginásio e uma piscina no
+              último piso.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final I LOVE BURGER -->
+
+        <!-- início Mexicaníssimo -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageGastronomia08"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Mexicano</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Mexicaníssimo
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Situado apenas a 400 metros da Estação de Metro Eucaliptos, o Bourbon São Paulo Ibirapuera Convention
+              Hotel apresenta comodidades para pessoas que procuram agilidade e serviço de qualidade.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Mexicaníssimo -->
+
+        <!-- início Bar da Dona Onça -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageGastronomia09"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Brasileira</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Bar da Dona Onça
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O Blue Tree Paulista beneficia de uma excelente localização em São Paulo, a 160 metros da Avenida
+              Paulista.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Bar da Dona Onça -->
+
+        <!-- início Terraço Jardins -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageGastronomia10"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Brasileira</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Terraço Jardins
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O Blue Tree Premium Morumbi está localizado em frente ao Centro Comercial Morumbi e dispõe de acesso Wi-Fi
+              gratuito.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Terraço Jardins -->
+
+
+
+
+      </section>
+
+
+
+
+
+
+
+    </main>
+
+
+  </div>
+
+  <footer class="footer_principal">
+    <p>2022 Todos os direitos reservados – Projeto Traveller</p>
+  </footer>
+
+  </div>
+
+
+
+
+  </div>
+
+
+  </div>
+
+
+</body>
+
+</html>

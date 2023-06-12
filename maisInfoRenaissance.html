@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d3b84b1d10.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pontos Cinematográficos</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <nav>
+      <ul>
+        <a href="#" title="logo">
+          <div class="logo"> </div>
+        </a>
+        <li><a href="Index.html" id="botoesmenu"> Hotéis</a></li>
+        <li><a href="Cultura.html" id="botoesmenu"> Cultura</a></li>
+        <li><a href="Vida-Noturna.html" id="botoesmenu">Vida Noturna</a></li>
+        <li><a href="Gastronomia.html" id="botoesmenu"> Gastronomia</a></li>
+        <li><a href="#" id="botoesmenu">Acessibilidade</a>
+          <ul>
+            <li><button onclick="diminuoFonte()" id="botoesAcessibilidade">Diminuir Fontes</button></li>
+            <li><button onclick="aumentoFonte()" id="botoesAcessibilidade">Aumentar Fontes</button></li>
+            <li><button onclick="ligaContraste()" id="botoesAcessibilidade">Ligar Alto Contraste</button></li>
+            <li><button onclick="desligaContraste()" id="botoesAcessibilidade">Desligar Alto Contraste</button></li>
+            <li><button onclick="fonteAcessivel()" id="botoesAcessibilidade">Fonte Acessível</button></li>
+            <li><button onclick="fontePadrao()" id="botoesAcessibilidade">Fonte Padrão</button></li>
+          </ul>
+        </li>
+      </ul>
+      
+
+    </nav>
+  </header>
+
+  <div class="botaoControleFont funcoesAcessibilidade">
+    <button onclick="diminuoFonte()">Diminuir Fontes</button>
+
+    <button onclick="aumentoFonte()">Aumentar Fontes</button>
+  </div>
+
+
+  <div class="botaoControleCor funcoesAcessibilidade">
+    <button onclick="ligaContraste()">Liga Alto Contraste</button>
+
+    <button onclick="desligaContraste()">Desliga Alto Contraste</button>
+  </div>
+
+  <div class="botaoControleFonte funcoesAcessibilidade">
+    <button onclick="fonteAcessivel()">Altera para Fonte Acessível</button>
+
+    <button onclick="fontePadrao()">Altera para Fonte Padrão</button>
+  </div>
+
+  <div class="container">
+
+
+
+    <div class="main-container">
+
+      <h1>Renaissance São Paulo Hotel
+      </h1>
+
+      <div class="pontosCinematograficos">
+
+
+        <div class="pontosCinematograficosItem" id="pontosCinematograficosInternal">
+          <section>
+            <div class="pontoCinematograficoImageInternal imageBanner2" id="internalImage"></div>
+          </section>
+          <section class="detailsSection">
+            <div class="pontoCinematograficoDetailsInternal">
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoTipoIcon tipoParque"></div>
+                <div class="pontoCinematograficoTipoText">Hotel</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Valor da diária:</span> $1636</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Telefone:</span>+55 (11)3069-2233</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Público-alvo:</span> todos</div>
+              </div>
+
+              <div class="pontoCinematograficoAberto">
+                <div class="pontoCinematograficoAbertoIcon"></div>
+                <div class="pontoCinematograficoAbertoText">Aberto</div>
+              </div>
+
+              <div class="pontoCinematograficoAberto">
+                <div class="pontoCinematograficoPetIcon PetIcon"></div>
+                <div class="pontoCinematograficoText">Pet Friendly</div>
+              </div>
+              <div class="pontoCinematograficoRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <div class=""></div>
+              </div>
+          </section>
+
+
+        </div>
+        <section class="imageGalery">
+          <galeria-imagens>
+            <img src="./images/reinassance/img1.jpg" />
+            <img src="./images/reinassance/img2.jpg" />
+            <img src="./images/reinassance/img3.jpg" />
+            <img src="./images/reinassance/img4.jpg" />
+            <img src="./images/reinassance/img5.jpg" />
+            <img src="./images/reinassance/img6.jpg" />
+          </galeria-imagens>
+        </section>
+
+
+        <div class="hotelContent" id="contentInternal">
+
+          <div class="hotelResumo" id="resumoInternal">
+
+
+            Com uma impressionante arquitetura e uma decoração elegante, o Renaissance São Paulo Hotel, de 5 estrelas,
+            está idealmente localizado na zona de Jardins, perto da Avenida Paulista e da Rua Oscar Freire, e a poucos
+            passos do Museu de Arte de São Paulo - MASP e do Conjunto Nacional.
+
+            Os quartos decorados com bom gosto apresentam camas confortáveis, televisões de ecrã plano com canais por
+            cabo, secretária, telefone e mini-bar. A espaçosa casa de banho privativa inclui uma banheira, produtos de
+            higiene pessoal gratuitos e um secador de cabelo. Alguns quartos também incluem vistas da cidade e área de
+            estar.
+
+            <p>Conveniências</p>
+            O hotel dispõe de uma piscina exterior e de um centro de fitness equipado, bem como de uma sauna. Localizado
+            no ZenZone, um piso destinado ao bem-estar, o The Spa at Renaissance disponibiliza uma variedade de
+            experiências relaxantes, como reflexologia, Reiki e shiatsu, além de terapias naturais que incluem massagens
+            e tratamentos de beleza.
+            Os hóspedes podem desfrutar de deliciosas receitas da cozinha brasileira com influências de praia e campo no
+            recém-renovado Restaurante Terraço Jardins. O menu ​apresentaingredientes frescos de pequenos produtores
+            locais, resgatando a cultura e o verdadeiro sabor da comida.
+            O Renaissance São Paulo possui uma sala de reuniões com capacidade para até 550 pessoas, enquanto o Teatro
+            Renaissance tem apresentações aos fins-de-semana.
+
+
+            <p> Localização e mobilidade</p>
+            Poderá chegar a várias lojas sofisticadas nas proximidades, bem como a restaurantes populares a uma curta
+            caminhada.
+            O Parque do Ibirapuera fica a 2 km do Renaissance São Paulo, enquanto o Aeroporto de Congonhas está a 10 km.
+            O Aeroporto Internacional de Guarulhos situa-se a a 30 km do hotel. O centro da cidade fica a 20 minutos de
+            carro do hotel.
+
+
+          </div>
+
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2657338790723!2d-46.66414438449375!3d-23.55889776738767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c89e6dca17%3A0xb62609d26a3a7180!2sRenaissance%20S%C3%A3o%20Paulo%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1664803726288!5m2!1spt-BR!2sbr"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://putlocker-is.org"></a><br>
+
+            </div>
+          </div>
+          <section class="acesseSiteWrapper"> <a
+              href="https://www.marriott.com.br/hotels/travel/saobr-renaissance-sao-paulo-hotel/" target="_blank">
+              <div class="acesseSite">Acesse o Site</div>
+            </a></section>
+
+
+          <p>Comentários</p>
+          <comentarios>
+            <section class="notasComentarios">
+            <label for="Nota" class="textos">Avaliação</label>
+      
+            <input type="range" id="nota" min="0" max="5" step="1" list="notas" class="nota">
+            <datalist id="notas">
+              <option value="0" label="0"></option>
+              <option value="1" label="1"></option>
+              <option value="2" label="2"></option>
+              <option value="3" label="3"></option>
+              <option value="4" label="4"></option>
+              <option value="5" label="5"></option>
+      
+            </datalist>
+          </section>
+                  <textarea type="text" name="Nome" size="100" placeholder="Deixe seu comentário" class="inputComentario"></textarea>
+                 <div class="enviarWrapper"> <button id="enviar" type="submit">Enviar</button></div>
+          </comentarios>
+          <div class="comentario" id="comentarioInternal">
+            <h4>Gustavo</h2>
+              Eu fui muito bem atendida, recepcionada e acolhida em uma situação de crise de ansiedade. A equipe da
+              recepção e gestão me acolheu, escutou, cuidou e orientou bem. Passei dias deliciosos, confortáveis e me
+              sentindo muito querida e amada como hospede. Foi espetacular! Parabpens a cada um, equipe excelente e
+              muito diferenciada, humanizados! Além de todo conforto que o hotel proporcionada: comida, cama,
+              elevadores, produtos, tudo! Parabéns!
+
+              <div class="pontoCinematograficoRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <div class=""></div>
+              </div>
+          </div>
+        </div>
+
+
+
+
+</body>
+
+</html>

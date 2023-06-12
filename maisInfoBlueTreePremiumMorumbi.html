@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d3b84b1d10.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pontos Cinematográficos</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <nav>
+      <ul>
+        <a href="#" title="logo">
+          <div class="logo"> </div>
+        </a>
+        <li><a href="Index.html" id="botoesmenu"> Hotéis</a></li>
+        <li><a href="Cultura.html" id="botoesmenu"> Cultura</a></li>
+        <li><a href="Vida-Noturna.html" id="botoesmenu">Vida Noturna</a></li>
+        <li><a href="Gastronomia.html" id="botoesmenu"> Gastronomia</a></li>
+        <li><a href="#" id="botoesmenu">Acessibilidade</a>
+          <ul>
+            <li><button onclick="diminuoFonte()" id="botoesAcessibilidade">Diminuir Fontes</button></li>
+            <li><button onclick="aumentoFonte()" id="botoesAcessibilidade">Aumentar Fontes</button></li>
+            <li><button onclick="ligaContraste()" id="botoesAcessibilidade">Ligar Alto Contraste</button></li>
+            <li><button onclick="desligaContraste()" id="botoesAcessibilidade">Desligar Alto Contraste</button></li>
+            <li><button onclick="fonteAcessivel()" id="botoesAcessibilidade">Fonte Acessível</button></li>
+            <li><button onclick="fontePadrao()" id="botoesAcessibilidade">Fonte Padrão</button></li>
+          </ul>
+        </li>
+      </ul>
+      
+
+    </nav>
+  </header>
+
+  <div class="botaoControleFont funcoesAcessibilidade">
+    <button onclick="diminuoFonte()">Diminuir Fontes</button>
+
+    <button onclick="aumentoFonte()">Aumentar Fontes</button>
+  </div>
+
+
+  <div class="botaoControleCor funcoesAcessibilidade">
+    <button onclick="ligaContraste()">Liga Alto Contraste</button>
+
+    <button onclick="desligaContraste()">Desliga Alto Contraste</button>
+  </div>
+
+  <div class="botaoControleFonte funcoesAcessibilidade">
+    <button onclick="fonteAcessivel()">Altera para Fonte Acessível</button>
+
+    <button onclick="fontePadrao()">Altera para Fonte Padrão</button>
+  </div>
+
+  <div class="container">
+
+
+
+    <div class="main-container">
+
+      <h1>Blue Tree Premium Paulista
+      </h1>
+
+      <div class="pontosCinematograficos">
+
+
+        <div class="pontosCinematograficosItem" id="pontosCinematograficosInternal">
+          <section>
+            <div class="pontoCinematograficoImageInternal imageBanner10" id="internalImage"></div>
+          </section>
+          <section class="detailsSection">
+            <div class="pontoCinematograficoDetailsInternal">
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoTipoIcon tipoParque"></div>
+                <div class="pontoCinematograficoTipoText">Hotel</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Valor da diária:</span> $504,00</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Telefone:</span>+ 55 (11)5187-1200 </div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Público-alvo:</span> todos</div>
+              </div>
+
+              <div class="pontoCinematograficoAberto">
+                <div class="pontoCinematograficoAbertoIcon"></div>
+                <div class="pontoCinematograficoAbertoText">Aberto</div>
+              </div>
+
+              <div class="pontoCinematograficoAberto">
+                <div class="pontoCinematograficoPetIcon PetIcon"></div>
+                <div class="pontoCinematograficoText">Pet Friendly</div>
+              </div>
+              <div class="pontoCinematograficoRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <div class=""></div>
+              </div>
+          </section>
+
+
+        </div>
+        <section class="imageGalery">
+          <galeria-imagens>
+            <img src="./images/blue-tree-premium-morumbi/img1.jpeg" />
+            <img src="./images/blue-tree-premium-morumbi/img2.jpeg" />
+            <img src="./images/blue-tree-premium-morumbi/img3.jpeg" />
+            <img src="./images/blue-tree-premium-morumbi/img4.jpeg" />
+            <img src="./images/blue-tree-premium-morumbi/img5.jpeg" />
+            <img src="./images/blue-tree-premium-morumbi/img6.jpg" />
+          </galeria-imagens>
+        </section>
+
+
+        <div class="hotelContent" id="contentInternal">
+
+          <div class="hotelResumo" id="resumoInternal">
+
+            O Blue Tree Premium Morumbi está localizado em frente ao Centro Comercial Morumbi e dispõe de acesso Wi-Fi
+            gratuito, de quartos com televisão por cabo, de uma piscina interior com um deque e de uma piscina exterior
+            com um pátio para apanhar sol com 20 metros.
+
+            <p>Conveniências</p>
+            Todos os quartos do Morumbi Blue Tree Premium estão equipados com ar condicionado, um minibar e janelas
+            insonorizadas. O serviço de quartos é prestado 24 horas por dia. As suites também incluem televisões LCD.
+
+            O restaurante do hotel, o Noah Jonnie Space, serve uma variedade de especialidades que incluem refeições
+            ligeiras e típicas de várias regiões. É servido um buffet internacional ao almoço e está disponível um menu
+            à carta ao jantar.
+
+            <p> Localização e mobilidade</p>
+            O Transamérica Expo Center fica a 15 minutos de carro do Blue Tree Premium Morumbi e a Expo São Paulo está a
+            30 minutos de carro. O Consulado dos EUA situa-se a 1,4 km da propriedade. O Centro da Cidade fica a 29
+            minutos de carro do hotel.
+
+
+          </div>
+
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.4823127299924!2d-46.69866818449247!3d-23.62289226975376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50c383442dfb%3A0xdd07ed725d00a38e!2sBlue%20Tree%20Premium%20Morumbi!5e0!3m2!1spt-BR!2sbr!4v1664810683577!5m2!1spt-BR!2sbr"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://putlocker-is.org"></a><br>
+
+            </div>
+          </div>
+          <section class="acesseSiteWrapper"> <a href="https://www.bluetree.com.br/hotel/blue-tree-premium-morumbi/"
+              target="_blank">
+              <div class="acesseSite">Acesse o Site</div>
+            </a></section>
+
+          <p>Comentários</p>
+          <comentarios>
+            <section class="notasComentarios">
+            <label for="Nota" class="textos">Avaliação</label>
+      
+            <input type="range" id="nota" min="0" max="5" step="1" list="notas" class="nota">
+            <datalist id="notas">
+              <option value="0" label="0"></option>
+              <option value="1" label="1"></option>
+              <option value="2" label="2"></option>
+              <option value="3" label="3"></option>
+              <option value="4" label="4"></option>
+              <option value="5" label="5"></option>
+      
+            </datalist>
+          </section>
+                  <textarea type="text" name="Nome" size="100" placeholder="Deixe seu comentário" class="inputComentario"></textarea>
+                 <div class="enviarWrapper"> <button id="enviar" type="submit">Enviar</button></div>
+          </comentarios>
+          <div class="comentario" id="comentarioInternal">
+            <h4>João</h2>
+              Atendimento dos funcionários, muito solícitos.
+              Serviço de quarto 24h.
+              Suítes novas e espaçosas
+              Academia muito boa.
+              O hotel possui um pequeno shopping em anexo
+              para os turistas que vêm a negócios.
+
+              <div class="pontoCinematograficoRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <div class=""></div>
+              </div>
+          </div>
+        </div>
+
+
+
+</body>
+
+</html>

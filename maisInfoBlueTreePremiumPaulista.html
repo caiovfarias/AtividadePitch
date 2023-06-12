@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d3b84b1d10.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pontos Cinematográficos</title>
+</head>
+
+<body>
+
+
+  <header class="header">
+
+    <nav>
+      <ul>
+        <a href="#" title="logo">
+          <div class="logo"> </div>
+        </a>
+        <li><a href="Index.html" id="botoesmenu"> Hotéis</a></li>
+        <li><a href="Cultura.html" id="botoesmenu"> Cultura</a></li>
+        <li><a href="Vida-Noturna.html" id="botoesmenu">Vida Noturna</a></li>
+        <li><a href="Gastronomia.html" id="botoesmenu"> Gastronomia</a></li>
+        <li><a href="#" id="botoesmenu">Acessibilidade</a>
+          <ul>
+            <li><button onclick="diminuoFonte()" id="botoesAcessibilidade">Diminuir Fontes</button></li>
+            <li><button onclick="aumentoFonte()" id="botoesAcessibilidade">Aumentar Fontes</button></li>
+            <li><button onclick="ligaContraste()" id="botoesAcessibilidade">Ligar Alto Contraste</button></li>
+            <li><button onclick="desligaContraste()" id="botoesAcessibilidade">Desligar Alto Contraste</button></li>
+            <li><button onclick="fonteAcessivel()" id="botoesAcessibilidade">Fonte Acessível</button></li>
+            <li><button onclick="fontePadrao()" id="botoesAcessibilidade">Fonte Padrão</button></li>
+          </ul>
+        </li>
+      </ul>
+      
+
+    </nav>
+  </header>
+
+  <div class="botaoControleFont funcoesAcessibilidade">
+    <button onclick="diminuoFonte()">Diminuir Fontes</button>
+
+    <button onclick="aumentoFonte()">Aumentar Fontes</button>
+  </div>
+
+
+  <div class="botaoControleCor funcoesAcessibilidade">
+    <button onclick="ligaContraste()">Liga Alto Contraste</button>
+
+    <button onclick="desligaContraste()">Desliga Alto Contraste</button>
+  </div>
+
+  <div class="botaoControleFonte funcoesAcessibilidade">
+    <button onclick="fonteAcessivel()">Altera para Fonte Acessível</button>
+
+    <button onclick="fontePadrao()">Altera para Fonte Padrão</button>
+  </div>
+
+
+    <div class="main-container">
+
+      <h1>Blue Tree Premium Paulista
+      </h1>
+
+      <div class="pontosCinematograficos">
+
+
+        <div class="pontosCinematograficosItem" id="pontosCinematograficosInternal">
+          <section>
+            <div class="pontoCinematograficoImageInternal imageBanner9" id="internalImage"></div>
+          </section>
+          <section class="detailsSection">
+            <div class="pontoCinematograficoDetailsInternal">
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoTipoIcon tipoParque"></div>
+                <div class="pontoCinematograficoTipoText">Hotel</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Valor da diária:</span> $562,00</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Telefone:</span>+55 (11)3147-7000 </div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Público-alvo:</span> todos</div>
+              </div>
+
+              <div class="pontoCinematograficoAberto">
+                <div class="pontoCinematograficoAbertoIcon"></div>
+                <div class="pontoCinematograficoAbertoText">Aberto</div>
+              </div>
+
+              <div class="pontoCinematograficoAberto">
+                <div class="pontoCinematograficoPetIcon PetIcon"></div>
+                <div class="pontoCinematograficoText">Pet Friendly</div>
+              </div>
+              <div class="pontoCinematograficoRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <div class=""></div>
+              </div>
+          </section>
+
+
+        </div>
+        <section class="imageGalery">
+          <galeria-imagens>
+            <img src="./images/blue-tree-premium-paulista/img1.jpg" />
+            <img src="./images/blue-tree-premium-paulista/img2.jpg" />
+            <img src="./images/blue-tree-premium-paulista/img3.jpg" />
+            <img src="./images/blue-tree-premium-paulista/img4.jpg" />
+            <img src="./images/blue-tree-premium-paulista/img5.jpg" />
+            <img src="./images/blue-tree-premium-paulista/img6.jpg" />
+          </galeria-imagens>
+        </section>
+
+
+        <div class="hotelContent" id="contentInternal">
+
+          <div class="hotelResumo" id="resumoInternal">
+
+            O Blue Tree Paulista beneficia de uma excelente localização em São Paulo, a 160 metros da Avenida Paulista.
+            Com fácil acesso aos transportes públicos e rodeado pelos teatros, museus, centros comerciais e
+            restaurantes, este hotel dispõe de acesso Wi-Fi gratuito e de uma piscina interior.
+
+            <p>Conveniências</p>
+            Todos os quartos do Blue Tree Premium Paulista são climatizados e estão equipados com uma televisão de ecrã
+            plano com canais por cabo, um cofre e um minibar. O serviço de quartos está disponível.
+
+            O Restaurante Noah serve refeições de estilo buffet de cozinha internacional. Também propõe diariamente um
+            pequeno-almoço de estilo ocidental com alguns pratos de cozinha japonesa.
+
+            <p> Localização e mobilidade</p>
+            O Blue Tree Paulista encontra-se a 270 metros do MASP - Museu de Arte de São Paulo. O Centro de Convenções
+            Frei Caneca fica a 800 metros do hotel, enquanto o Centro de Convenções Rebouças está a 1,2 km. O Parque do
+            Ibirapuera fica apenas a 3,8 km da propriedade e o Aeroporto de Congonhas está a 8,8 km. O Centro da Cidade
+            fica a 16 minutos de carro do hotel.
+
+
+          </div>
+
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2309393389237!2d-46.65829618449386!3d-23.56014786743379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cc06495c71%3A0xcc0f48b9437fc214!2sBlue%20Tree%20Premium%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1664810444113!5m2!1spt-BR!2sbr"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://putlocker-is.org"></a><br>
+
+
+            </div>
+          </div>
+          <section class="acesseSiteWrapper"> <a href="https://www.bluetree.com.br/hotel/blue-tree-premium-paulista/"
+              target="_blank">
+              <div class="acesseSite">Acesse o Site</div>
+            </a></section>
+
+          <p>Comentários</p>
+          <comentarios>
+            <section class="notasComentarios">
+            <label for="Nota" class="textos">Avaliação</label>
+      
+            <input type="range" id="nota" min="0" max="5" step="1" list="notas" class="nota">
+            <datalist id="notas">
+              <option value="0" label="0"></option>
+              <option value="1" label="1"></option>
+              <option value="2" label="2"></option>
+              <option value="3" label="3"></option>
+              <option value="4" label="4"></option>
+              <option value="5" label="5"></option>
+      
+            </datalist>
+          </section>
+                  <textarea type="text" name="Nome" size="100" placeholder="Deixe seu comentário" class="inputComentario"></textarea>
+                 <div class="enviarWrapper"> <button id="enviar" type="submit">Enviar</button></div>
+          </comentarios>
+          <div class="comentario" id="comentarioInternal">
+            <h4>João</h2>
+              Atendimento dos funcionários, muito solícitos.
+              Serviço de quarto 24h.
+              Suítes novas e espaçosas
+              Academia muito boa.
+              O hotel possui um pequeno shopping em anexo
+              para os turistas que vêm a negócios.
+
+              <div class="pontoCinematograficoRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <div class=""></div>
+              </div>
+          </div>
+        </div>
+
+
+
+</body>
+
+</html>

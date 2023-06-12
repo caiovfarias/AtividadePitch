@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d3b84b1d10.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pontos Cinematográficos</title>
+</head>
+
+<body>
+
+
+  <header class="header">
+
+    <nav>
+      <ul>
+        <a href="#" title="logo">
+          <div class="logo"> </div>
+        </a>
+        <li><a href="Index.html" id="botoesmenu"> Hotéis</a></li>
+        <li><a href="Cultura.html" id="botoesmenu"> Cultura</a></li>
+        <li><a href="Vida-Noturna.html" id="botoesmenu">Vida Noturna</a></li>
+        <li><a href="Gastronomia.html" id="botoesmenu"> Gastronomia</a></li>
+        <li><a href="#" id="botoesmenu">Acessibilidade</a>
+          <ul>
+            <li><button onclick="diminuoFonte()" id="botoesAcessibilidade">Diminuir Fontes</button></li>
+            <li><button onclick="aumentoFonte()" id="botoesAcessibilidade">Aumentar Fontes</button></li>
+            <li><button onclick="ligaContraste()" id="botoesAcessibilidade">Ligar Alto Contraste</button></li>
+            <li><button onclick="desligaContraste()" id="botoesAcessibilidade">Desligar Alto Contraste</button></li>
+            <li><button onclick="fonteAcessivel()" id="botoesAcessibilidade">Fonte Acessível</button></li>
+            <li><button onclick="fontePadrao()" id="botoesAcessibilidade">Fonte Padrão</button></li>
+          </ul>
+        </li>
+      </ul>
+      
+
+    </nav>
+  </header>
+
+  <div class="botaoControleFont funcoesAcessibilidade">
+    <button onclick="diminuoFonte()">Diminuir Fontes</button>
+
+    <button onclick="aumentoFonte()">Aumentar Fontes</button>
+  </div>
+
+
+  <div class="botaoControleCor funcoesAcessibilidade">
+    <button onclick="ligaContraste()">Liga Alto Contraste</button>
+
+    <button onclick="desligaContraste()">Desliga Alto Contraste</button>
+  </div>
+
+  <div class="botaoControleFonte funcoesAcessibilidade">
+    <button onclick="fonteAcessivel()">Altera para Fonte Acessível</button>
+
+    <button onclick="fontePadrao()">Altera para Fonte Padrão</button>
+  </div>
+
+  <div class="container">
+
+
+
+    <div class="main-container">
+
+      <h1>Comfort Ibirapuera
+      </h1>
+
+      <div class="pontosCinematograficos">
+
+
+        <div class="pontosCinematograficosItem" id="pontosCinematograficosInternal">
+          <section>
+            <div class="pontoCinematograficoImageInternal imageBanner7" id="internalImage"></div>
+          </section>
+          <section class="detailsSection">
+            <div class="pontoCinematograficoDetailsInternal">
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoTipoIcon tipoParque"></div>
+                <div class="pontoCinematograficoTipoText">Hotel</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Valor da diária:</span> $505,00</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Telefone:</span>+55 (11)5056-5800 </div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Público-alvo:</span> todos</div>
+              </div>
+
+              <div class="pontoCinematograficoAberto">
+                <div class="pontoCinematograficoAbertoIcon"></div>
+                <div class="pontoCinematograficoAbertoText">Aberto</div>
+              </div>
+
+              <div class="pontoCinematograficoAberto">
+                <div class="pontoCinematograficoPetIcon noPetIcon"></div>
+                <div class="pontoCinematograficoText">Pet Friendly</div>
+              </div>
+              <div class="pontoCinematograficoRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <div class=""></div>
+              </div>
+          </section>
+
+
+        </div>
+        <section class="imageGalery">
+          <galeria-imagens>
+            <img src="./images/comfort-ibirapuera/img1.jpeg" />
+            <img src="./images/comfort-ibirapuera/img2.jpeg" />
+            <img src="./images/comfort-ibirapuera/img3.jpeg" />
+            <img src="./images/comfort-ibirapuera/img4.jpeg" />
+            <img src="./images/comfort-ibirapuera/img5.jpeg" />
+            <img src="./images/comfort-ibirapuera/img6.jpg" />
+          </galeria-imagens>
+        </section>
+
+
+        <div class="hotelContent" id="contentInternal">
+
+          <div class="hotelResumo" id="resumoInternal">
+
+
+            O Comfort Ibirapuera está localizado no badalado bairro de Moema, em São Paulo, em frente à Estação de Metro
+            Moema e apenas a 1,5 km do Parque do Ibirapuera. O hotel disponibiliza um ginásio e uma piscina no último
+            piso.
+
+            <p>Conveniências</p>
+            Estão disponíveis acesso Wi-Fi gratuito em toda a propriedade e estacionamento mediante um custo adicional.
+
+            Os modernos quartos apresentam uma decoração em madeira e uma varanda. Estão equipados com ar condicionado,
+            um cofre, uma televisão de ecrã plano com canais por cabo e um minibar. A casa de banho privativa inclui um
+            chuveiro.
+
+            Os hóspedes podem desfrutar de refeições deliciosas no Restaurante Bomjardim, especializado em cozinha
+            internacional. Com uma seleção de vinhos variada, o restaurante também propõe cocktails brasileiros.
+
+            As comodidades incluem uma receção 24 horas, serviços de lavandaria e comodidades para reuniões.
+
+
+            <p> Localização e mobilidade</p>
+            Para conveniência dos hóspedes, o Comfort Ibirapuera fica apenas a 5 minutos de carro do Centro Comercial
+            Ibirapuera, a 9 km do São Paulo Expo (centro de convenções) e a 17 minutos de carro da Avenida Paulista. Há
+            uma variedade de lojas sofisticadas, restaurantes e cafés a uma curta caminhada.
+            O aeroporto mais próximo é o Aeroporto de Congonhas, a 3,5 km do hotel. O Centro da Cidade fica a 18 minutos
+            de carro do hotel.
+
+
+          </div>
+
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0429774145523!2d-46.66421998449294!3d-23.602791569009845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a051ffd212f%3A0xdef750ee62ca41bb!2sComfort%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1664809502266!5m2!1spt-BR!2sbr"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://putlocker-is.org"></a><br>
+
+            </div>
+          </div>
+          <section class="acesseSiteWrapper"> <a href="https://www.reserveatlantica.com.br/hotel/comfort-ibirapuera"
+              target="_blank">
+              <div class="acesseSite">Acesse o Site</div>
+            </a></section>
+
+          <p>Comentários</p>
+          <comentarios>
+            <section class="notasComentarios">
+            <label for="Nota" class="textos">Avaliação</label>
+      
+            <input type="range" id="nota" min="0" max="5" step="1" list="notas" class="nota">
+            <datalist id="notas">
+              <option value="0" label="0"></option>
+              <option value="1" label="1"></option>
+              <option value="2" label="2"></option>
+              <option value="3" label="3"></option>
+              <option value="4" label="4"></option>
+              <option value="5" label="5"></option>
+      
+            </datalist>
+          </section>
+                  <textarea type="text" name="Nome" size="100" placeholder="Deixe seu comentário" class="inputComentario"></textarea>
+                 <div class="enviarWrapper"> <button id="enviar" type="submit">Enviar</button></div>
+          </comentarios>
+          <div class="comentario" id="comentarioInternal">
+            <h4>João</h2>
+              Atendimento dos funcionários, muito solícitos.
+              Serviço de quarto 24h.
+              Suítes novas e espaçosas
+              Academia muito boa.
+              O hotel possui um pequeno shopping em anexo
+              para os turistas que vêm a negócios.
+
+              <div class="pontoCinematograficoRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <div class=""></div>
+              </div>
+          </div>
+        </div>
+
+
+
+</body>
+
+</html>

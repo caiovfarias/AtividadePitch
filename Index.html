@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d3b84b1d10.js" crossorigin="anonymous"></script>
+  <script src="./scripts/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotéis</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <nav>
+      <ul>
+        <a href="#" title="logo">
+          <div class="logo"> </div>
+        </a>
+        <li><a href="Index.html" id="botoesmenu"> Hotéis</a></li>
+        <li><a href="Cultura.html" id="botoesmenu"> Cultura</a></li>
+        <li><a href="Vida-Noturna.html" id="botoesmenu">Vida Noturna</a></li>
+        <li><a href="Gastronomia.html" id="botoesmenu"> Gastronomia</a></li>
+        <li><a href="#" id="botoesmenu">Acessibilidade</a>
+          <ul>
+            <li><button onclick="diminuoFonte()" id="botoesAcessibilidade">Diminuir Fontes</button></li>
+            <li><button onclick="aumentoFonte()" id="botoesAcessibilidade">Aumentar Fontes</button></li>
+            <li><button onclick="ligaContraste()" id="botoesAcessibilidade">Ligar Alto Contraste</button></li>
+            <li><button onclick="desligaContraste()" id="botoesAcessibilidade">Desligar Alto Contraste</button></li>
+            <li><button onclick="fonteAcessivel()" id="botoesAcessibilidade">Fonte Acessível</button></li>
+            <li><button onclick="fontePadrao()" id="botoesAcessibilidade">Fonte Padrão</button></li>
+          </ul>
+        </li>
+      </ul>
+      
+
+    </nav>
+  </header>
+
+
+  <div class="container">
+
+
+
+    <main class="main-container">
+
+      <section class="busca">
+
+        <section class="buscaHoteis filtros">
+          <input type="text" class="inputBusca" placeholder="Digite o nome do hotel"> <button id="buscar"
+            type="submit"><span id="fontLabel">Buscar</span></button>
+        </section>
+
+
+        <form name="busca" action="" method="post">
+
+          <section>
+            <label for="Tipo de Viagem" class="textos"> Tipo de Viagem: </label>
+            <label for="" class="textos">
+              <input type="radio" name="tipodeviagem" id="tipodeviagem1" required class="radio">
+              Estudo</label>
+            <label for="" class="textos">
+              <input type="radio" name="tipodeviagem" id="tipodeviagem2">
+              Trabalho</label>
+            <label for="" class="textos">
+              <input type="radio" name="tipodeviagem" id="tipodeviagem3">
+              Turismo</label>
+            ||
+            <label class="textos">Datas: </label>
+            <input placeholder="Entrada" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+
+
+            <input placeholder="Saída" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+          </section>
+          <section class="filtros">
+
+            <label for="Nota" class="textos">Distância Máxima</label>
+            <input type="range" id="distancia" min="0" max="6" step="1" list="distancia">
+
+            <datalist id="distancia">
+              <option value="0" label="5"></option>
+              <option value="1" label="10"></option>
+              <option value="2" label="15"></option>
+              <option value="3" label="20"></option>
+              <option value="4" label="30"></option>
+              <option value="5" label="40"></option>
+              <option value="6" label="50"></option>
+            </datalist>
+
+            <label for="Nota" class="textos">Qualificação</label>
+
+            <input type="range" id="nota" min="0" max="5" step="1" list="notas" class="nota">
+            <datalist id="notas">
+              <option value="0" label="0"></option>
+              <option value="1" label="1"></option>
+              <option value="2" label="2"></option>
+              <option value="3" label="3"></option>
+              <option value="4" label="4"></option>
+              <option value="5" label="5"></option>
+
+            </datalist>
+          </section>
+
+          </p>
+
+
+        </form>
+      </section>
+
+      <h1 id="fontLabel">HOTÉIS EM SÃO PAULO</h1>
+
+
+      <section class="pontosCinematograficos">
+        <!-- início Sheraton São Paulo WTC Hotel -->
+        <article class="pontosCinematograficosItem">
+          <a href="maisInfo.html">
+            <div class="pontoCinematograficoImage imageBanner1"></div>
+          </a>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoParque"></div>
+              <div class="pontoCinematograficoTipoText">Hotel</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon fechadoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">Fechado</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Sheraton São Paulo WTC Hotel
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O Sheraton São Paulo WTC Hotel oferece 298 apartamentos com alto padrão de conforto e os melhores serviços
+              de hotelaria de luxo brasileira.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Sheraton São Paulo WTC Hotel -->
+
+        <!-- início Renaissance São Paulo Hotel -->
+        <article class="pontosCinematograficosItem">
+          <a href="maisInfoRenaissance.html">
+            <div class="pontoCinematograficoImage imageBanner2"></div>
+          </a>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Hotel</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">Aberto</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Renaissance São Paulo Hotel
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Com uma impressionante arquitetura e uma decoração elegante, o Renaissance São Paulo Hotel, de 5 estrelas.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Renaissance São Paulo Hotel -->
+
+        <!-- início Palácio Tangará -->
+        <article class="pontosCinematograficosItem">
+          <a href="maisInfoPalacioTangara.html">
+            <div class="pontoCinematograficoImage imageBanner3"></div>
+          </a>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Hotel</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">Aberto</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Palácio Tangará
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O Palácio Tangará - an Oetker Collection Hotel foi construído nos arredores do famoso Parque Burle Marx. O
+              hotel dispõe de 141 quartos espaçosos, incluindo 59 suites.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Palácio Tangará -->
+
+        <!-- início Mercure São Paulo Pamplona -->
+        <article class="pontosCinematograficosItem">
+          <a href="maisInfoMercure.html">
+            <div class="pontoCinematograficoImage imageBanner4"></div>
+          </a>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoOutros"></div>
+              <div class="pontoCinematograficoTipoText">Hotel</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">Aberto</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Mercure São Paulo Pamplona
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Os hóspedes podem desfrutar de uma excelente localização no popular Bairro dos Jardins, em São Paulo, ao
+              ficar hospedados no Mercure Sao Paulo Pamplona, que fica ao lado da Avenida 9 de Julho e a 800 metros da
+              Avenida Paulista.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Mercure São Paulo Pamplona -->
+
+        <!-- início IBIS Styles São Paulo Anhembi -->
+        <article class="pontosCinematograficosItem">
+          <a href="maisInfoIbis.html">
+            <div class="pontoCinematograficoImage imageBanner5"></div>
+          </a>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoTeatro"></div>
+              <div class="pontoCinematograficoTipoText">Hotel</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">Aberto</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              IBIS Styles São Paulo Anhembi
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O Ibis Styles São Paulo Anhembi está localizado na área de Santana, em São Paulo. Há acesso Wi-Fi
+              gratuito.
+
+              Cada quarto apresenta uma temática de aviação e inclui ar condicionado, uma televisão de ecrã plano e um
+              minibar.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final IBIS Styles São Paulo Anhembi -->
+
+        <!-- início Radisson Hotel Paulista -->
+        <article class="pontosCinematograficosItem">
+          <a href="maisInfoRadisson.html">
+            <div class="pontoCinematograficoImage imageBanner6"></div>
+          </a>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Hotel</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">Aberto</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Radisson Hotel Paulista
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O Radisson São Paulo Paulista disponibiliza uma piscina exterior e acesso Wi-Fi gratuito em todas as
+              áreas precisamente no centro financeiro e comercial de São Paulo.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Radisson Hotel Paulista -->
+
+        <!-- início Comfort Ibirapuera -->
+        <article class="pontosCinematograficosItem">
+          <a href="maisInfoComfort.html">
+            <div class="pontoCinematograficoImage imageBanner7"></div>
+          </a>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Hotel</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">Aberto</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Comfort Ibirapuera
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O Comfort Ibirapuera está localizado no badalado bairro de Moema, em São Paulo, em frente à Estação de
+              Metro Moema e apenas a 1,5 km do Parque do Ibirapuera. O hotel disponibiliza um ginásio e uma piscina no
+              último piso.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Comfort Ibirapuera -->
+
+        <!-- início Bourbon Convention Ibirapuera -->
+        <article class="pontosCinematograficosItem">
+          <a href="maisInfoBourbon.html">
+            <div class="pontoCinematograficoImage imageBanner8"></div>
+          </a>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Hotel</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">Aberto</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Bourbon Convention Ibirapuera
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Situado apenas a 400 metros da Estação de Metro Eucaliptos, o Bourbon São Paulo Ibirapuera Convention
+              Hotel apresenta comodidades para pessoas que procuram agilidade e serviço de qualidade.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Bourbon Convention Ibirapuera -->
+
+        <!-- início Blue Tree Premium Paulista -->
+        <article class="pontosCinematograficosItem">
+          <a href="maisInfoBlueTreePremiumPaulista.html">
+            <div class="pontoCinematograficoImage imageBanner9"></div>
+          </a>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Hotel</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">Aberto</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Blue Tree Premium Paulista
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O Blue Tree Paulista beneficia de uma excelente localização em São Paulo, a 160 metros da Avenida
+              Paulista.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Blue Tree Premium Paulista -->
+
+        <!-- início Blue Tree Premium Morumbi -->
+        <article class="pontosCinematograficosItem">
+          <a href="maisInfoBlueTreePremiumMorumbi.html">
+            <div class="pontoCinematograficoImage imageBanner10"></div>
+          </a>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Hotel</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">Aberto</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Blue Tree Premium Morumbi
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O Blue Tree Premium Morumbi está localizado em frente ao Centro Comercial Morumbi e dispõe de acesso Wi-Fi
+              gratuito.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Blue Tree Premium Morumbi -->
+
+
+
+
+      </section>
+
+
+
+
+
+
+
+    </main>
+
+
+  </div>
+
+  <footer class="footer_principal">
+    <p>2022 Todos os direitos reservados – Projeto Traveller</p>
+  </footer>
+
+  </div>
+
+
+
+
+  </div>
+
+
+  </div>
+
+
+</body>
+
+</html>

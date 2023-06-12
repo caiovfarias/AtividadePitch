@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d3b84b1d10.js" crossorigin="anonymous"></script>
+  <script src="/scripts/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vida Noturna</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <nav>
+      <ul>
+        <a href="#" title="logo">
+          <div class="logo"> </div>
+        </a>
+        <li><a href="Index.html" id="botoesmenu"> Hotéis</a></li>
+        <li><a href="Cultura.html" id="botoesmenu"> Cultura</a></li>
+        <li><a href="Vida-Noturna.html" id="botoesmenu">Vida Noturna</a></li>
+        <li><a href="Gastronomia.html" id="botoesmenu"> Gastronomia</a></li>
+        <li><a href="#" id="botoesmenu">Acessibilidade</a>
+          <ul>
+            <li><button onclick="diminuoFonte()" id="botoesAcessibilidade">Diminuir Fontes</button></li>
+            <li><button onclick="aumentoFonte()" id="botoesAcessibilidade">Aumentar Fontes</button></li>
+            <li><button onclick="ligaContraste()" id="botoesAcessibilidade">Ligar Alto Contraste</button></li>
+            <li><button onclick="desligaContraste()" id="botoesAcessibilidade">Desligar Alto Contraste</button></li>
+            <li><button onclick="fonteAcessivel()" id="botoesAcessibilidade">Fonte Acessível</button></li>
+            <li><button onclick="fontePadrao()" id="botoesAcessibilidade">Fonte Padrão</button></li>
+          </ul>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+    <div class="container">
+
+    <main class="main-container">
+
+      <section class="busca">
+
+        <section class="buscaHoteis filtros">
+          <input type="text" class="inputBusca" placeholder="Digite o nome do bar, balada ou cidade"> <button
+            id="buscar" type="submit"><span id="fontLabel">Buscar</span></button>
+        </section>
+
+
+        <form name="busca" action="" method="post">
+
+          <section>
+            <label for="vidanoturna"></label>
+            <label for="">
+              <input type="checkbox" name="vidanoturna" id="vidanoturna1">
+              Bares e Clubes</label>
+            <label for="">
+              <input type="checkbox" name="vidanoturna" id="vidanoturna1">
+              Baladas</label>
+            <label for="">
+              <input type="checkbox" name="vidanoturna" id="vidanoturna1">
+              Karaokê</label>
+            <label for="">
+              <input type="checkbox" name="vidanoturna" id="vidanoturna1">
+              Clube de Comédia</label>
+            <label for="">
+              <input type="checkbox" name="vidanoturna" id="vidanoturna1">
+              Bares e Clubes Gays</label>
+            <label for="">
+              <input type="checkbox" name="vidanoturna" id="vidanoturna1">
+              Bares de Vinho</label>
+
+
+          </section>
+          <section class="filtros">
+
+            <label for="">Preço</label>
+            <label for="">
+              <input type="checkbox" name="preço" id="preço1">
+              $</label>
+            <label for="">
+              <input type="checkbox" name="preço" id="preço1">
+              $$</label>
+            <label for="">
+              <input type="checkbox" name="preço" id="preço1">
+              $$$</label>
+            <label for="">
+              <input type="checkbox" name="preço" id="preço1">
+              $$$$</label>
+
+            ||
+
+            <label for="Nota" class="textos">Distância Máxima</label>
+            <input type="range" id="distancia" min="0" max="6" step="1" list="distancia">
+
+            <datalist id="distancia">
+              <option value="0" label="5"></option>
+              <option value="1" label="10"></option>
+              <option value="2" label="15"></option>
+              <option value="3" label="20"></option>
+              <option value="4" label="30"></option>
+              <option value="5" label="40"></option>
+              <option value="6" label="50"></option>
+            </datalist>
+
+            <label for="Nota" class="textos">Qualificação</label>
+
+            <input type="range" id="nota" min="0" max="5" step="1" list="notas" class="nota">
+            <datalist id="notas">
+              <option value="0" label="0"></option>
+              <option value="1" label="1"></option>
+              <option value="2" label="2"></option>
+              <option value="3" label="3"></option>
+              <option value="4" label="4"></option>
+              <option value="5" label="5"></option>
+
+            </datalist>
+          </section>
+
+          </p>
+
+
+        </form>
+      </section>
+
+      <h1 id="fontLabel">VIDA NOTURNA EM SÃO PAULO</h1>
+
+
+
+      <section class="pontosCinematograficos">
+        <!-- início Skye Bar -->
+        <article class="pontosCinematograficosItem">
+          <a href="maisInfoSkye.html">
+            <div class="pontoCinematograficoImage imageVidaNoturna01"></div>
+          </a>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoParque"></div>
+              <div class="pontoCinematograficoTipoText">Bares e Clubes</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon fechadoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Skye Bar
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Restaurante/bar sofisticado no terraço do Hotel Unique com piscina e vista para a cidade.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Skye Bar -->
+
+        <!-- início Cafe Piu Piu -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageVidaNoturna02"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Bares e Clubes</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Cafe Piu Piu
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Durante 3 décadas, este local foi palco de bandas em um espaço festivo e informal, com bebidas e petiscos.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Cafe Piu Piu -->
+
+        <!-- início Wood's -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageVidaNoturna03"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Balada</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Wood's
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Se prepare para aproveitar a vida ao som dos melhores hits. Com um estilo moderno e charmoso, a casa conta
+              com dois andares; pista e mezanino.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Wood's -->
+
+        <!-- início Ó do Borogodó  -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageVidaNoturna04"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoOutros"></div>
+              <div class="pontoCinematograficoTipoText">Bares e Clubes</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Ó do Borogodó
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Samba, choro, batuques e outras bossas. Casa da música brasileira em São Paulo. Funciona desde 2001 todos
+              os dias da semana.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Ó do Borogodó  -->
+
+        <!-- início Dopamina Comedy -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageVidaNoturna05"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoTeatro"></div>
+              <div class="pontoCinematograficoTipoText">Clubes de comédia</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Dopamina Comedy
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Dopamina é uma noite empírica de Stand Up Comedy onde você pode vivenciar a criação de uma piada.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Dopamina Comedy -->
+
+        <!-- início Villa Country -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageVidaNoturna06"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Bares e Clubes</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Villa Country
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Boate temática de faroeste com vários ambientes, música country ao vivo e grandes pistas de dança.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Villa Country -->
+
+        <!-- início Stones Music Bar -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageVidaNoturna07"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Bares e Clubes</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Stones Music Bar
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Bar estiloso com música ao vivo e área externa, além de drinques e petiscos.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Stones Music Bar -->
+
+        <!-- início Jazz nos Fundos -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageVidaNoturna08"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Bares e Clubes</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Jazz nos Fundos
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Um pequeno tesouro escondido, bar decorado c/ arte e materiais reciclados, jazz ao vivo, aperitivos e
+              cerveja.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Jazz nos Fundos -->
+
+        <!-- início D-Edge -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageVidaNoturna09"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Balada</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              D-Edge
+            </div>
+            <div class="pontoCinematograficoResumo">
+              O D-Edge Club é uma casa noturna paulistana dedicada a novos estilos musicais e também ao underground.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final D-Edge -->
+
+        <!-- início Tokyo -->
+        <article class="pontosCinematograficosItem">
+            <div class="pontoCinematograficoImage imageVidaNoturna10"></div>
+          <div class="pontoCinematograficoDetails">
+            <div class="pontoCinematograficoTipo">
+              <div class="pontoCinematograficoTipoIcon tipoMuseu"></div>
+              <div class="pontoCinematograficoTipoText">Karaokê</div>
+            </div>
+
+            <div class="pontoCinematograficoAberto">
+              <div class="pontoCinematograficoAbertoIcon"></div>
+              <div class="pontoCinematograficoAbertoText">$$$</div>
+            </div>
+            <div class="pontoCinematograficoRating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <div class=""></div>
+            </div>
+
+
+
+          </div>
+
+          <div class="pontoCinematograficoContent">
+            <div class="pontoCinematograficoTitle">
+              Tokyo
+            </div>
+            <div class="pontoCinematograficoResumo">
+              Bar na cobertura com luzes neon e karaokê, serve coquetéis, cervejas, hambúrgueres e pratos asiáticos.
+            </div>
+          </div>
+
+
+        </article>
+        <!-- Final Tokyo -->
+
+
+
+
+      </section>
+
+
+
+
+
+
+
+    </main>
+
+
+  </div>
+
+  <footer class="footer_principal">
+    <p>2022 Todos os direitos reservados – Projeto Traveller</p>
+  </footer>
+
+  </div>
+
+
+
+
+  </div>
+
+
+  </div>
+
+
+</body>
+
+</html>

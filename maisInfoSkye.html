@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d3b84b1d10.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skye Bar</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <nav>
+      <ul>
+        <a href="#" title="logo">
+          <div class="logo"> </div>
+        </a>
+        <li><a href="Index.html" id="botoesmenu"> Hotéis</a></li>
+        <li><a href="Cultura.html" id="botoesmenu"> Cultura</a></li>
+        <li><a href="Vida-Noturna.html" id="botoesmenu">Vida Noturna</a></li>
+        <li><a href="Gastronomia.html" id="botoesmenu"> Gastronomia</a></li>
+        <li><a href="#" id="botoesmenu">Acessibilidade</a>
+          <ul>
+            <li><button onclick="diminuoFonte()" id="botoesAcessibilidade">Diminuir Fontes</button></li>
+            <li><button onclick="aumentoFonte()" id="botoesAcessibilidade">Aumentar Fontes</button></li>
+            <li><button onclick="ligaContraste()" id="botoesAcessibilidade">Ligar Alto Contraste</button></li>
+            <li><button onclick="desligaContraste()" id="botoesAcessibilidade">Desligar Alto Contraste</button></li>
+            <li><button onclick="fonteAcessivel()" id="botoesAcessibilidade">Fonte Acessível</button></li>
+            <li><button onclick="fontePadrao()" id="botoesAcessibilidade">Fonte Padrão</button></li>
+          </ul>
+        </li>
+      </ul>
+      
+
+    </nav>
+  </header>
+
+  <div class="botaoControleFont funcoesAcessibilidade">
+    <button onclick="diminuoFonte()">Diminuir Fontes</button>
+
+    <button onclick="aumentoFonte()">Aumentar Fontes</button>
+  </div>
+
+
+  <div class="botaoControleCor funcoesAcessibilidade">
+    <button onclick="ligaContraste()">Liga Alto Contraste</button>
+
+    <button onclick="desligaContraste()">Desliga Alto Contraste</button>
+  </div>
+
+  <div class="botaoControleFonte funcoesAcessibilidade">
+    <button onclick="fonteAcessivel()">Altera para Fonte Acessível</button>
+
+    <button onclick="fontePadrao()">Altera para Fonte Padrão</button>
+  </div>
+
+  <div class="container">
+
+
+
+    <div class="main-container">
+
+      <h1>Skye Bar
+      </h1>
+
+      <div class="pontosCinematograficos">
+
+
+        <div class="pontosCinematograficosItem" id="pontosCinematograficosInternal">
+          <section>
+            <div class="pontoCinematograficoImageInternal imageVidaNoturna01" id="internalImage"></div>
+          </section>
+          <section class="detailsSection">
+            <div class="pontoCinematograficoDetailsInternal">
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoTipoIcon tipoParque"></div>
+                <div class="pontoCinematograficoTipoText">Bares e Clubes</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Preço:</span> $$$$</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Telefone:</span>(11) 3055-4702</div>
+              </div>
+
+
+              <div class="pontoCinematograficoAberto">
+                <div class="pontoCinematograficoAbertoIcon"></div>
+                <div class="pontoCinematograficoAbertoText">Aberto</div>
+              </div>
+
+              <div class="pontoCinematograficoAberto">
+                <div class="pontoCinematograficoPetIcon noPetIcon"></div>
+                <div class="pontoCinematograficoText">Estacionamento</div>
+              </div>
+              <div class="pontoCinematograficoRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <div class=""></div>
+              </div>
+          </section>
+
+
+        </div>
+        <section class="imageGalery">
+          <galeria-imagens>
+            <img src="./images/skye/skye1.jpg" />
+            <img src="./images/skye/skye2.jpg" />
+            <img src="./images/skye/skye3.jpg" />
+            <img src="./images/skye/skye4.jpg" />
+            <img src="./images/skye/skye5.jpg" />
+            <img src="./images/skye/skye6.jpg" />
+          </galeria-imagens>
+        </section>
+
+
+        <div class="hotelContent" id="contentInternal">
+
+          <div class="hotelResumo" id="resumoInternal">
+
+
+            Localizado na cobertura do hotel, o Skye possui uma piscina avermelhada e um fabuloso lounge com vista
+            panorâmica para o Parque Ibirapuera e todo o horizonte de São Paulo, incluindo o skyline da Avenida
+            Paulista.
+
+            No Skye, os maravilhosos sabores apresentados na gastronomia contemporânea do chef Emmanuel Bassoleil, a
+            exuberância visual e o serviço único despertam os sentidos dos visitantes em todas as ocasiões, seja num
+            café da manhã em família, um almoço de negócios, happy hour entre amigos ou em um jantar romântico a dois.
+
+            Na cobertura do Unique e com acesso independente pelo elevador panorâmico, o Skye possui uma atmosfera
+            envolvente. Convidamos você a descobrir este espaço único.
+
+            <p>Horário de Funcionamento</p>
+            Café da manhã - Diariamente das 7h às 11h
+            <br>
+            Almoço - De segunda a sexta-feira das 12h às 15h30
+            <br>
+            Sábados, domingos e feriados - das 13h às 15h30
+            <br>
+            Jantar - De segunda a sábado das 18h à 00h30 (permanência máxima até 1h da manhã)
+            Domingo das 18h às 23h30 (permanência máxima até meia noite)
+
+
+            <p> Localização</p>
+            Bairro: Pinheiros
+            <br>
+            Ao explorar Pinheiros, um bairro conhecido pelos restaurantes e cafés aconchegantes, você sentirá uma
+            energia jovial. Vários centros culturais e institutos cercam a área, e até mesmo a igreja principal, a do
+            Calvário, realiza a tradicional “Festa Junina” brasileira, uma comemoração com música, dança e comidas
+            tradicionais durante os meses de junho e julho. Nos fins de semana, os moradores ocupam a Praça Benedito
+            Calixto, uma área com muito barulho e pessoas, onde você pode saborear bebidas e aproveitar música ao vivo
+            ao lado da feira de antiguidades.
+
+
+          </div>
+
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.319198604839!2d-46.668339577920584!3d-23.581777782958508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59e140e844a5%3A0xee8005a359e780e3!2sSkye!5e0!3m2!1spt-BR!2sbr!4v1665351766271!5m2!1spt-BR!2sbr"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://putlocker-is.org"></a><br>
+
+            </div>
+          </div>
+          <section class="acesseSiteWrapper"> <a
+              href="https://www.hotelunique.com/pt/restaurante-bar/skye/" target="_blank">
+              <div class="acesseSite">Acesse o Site</div>
+            </a></section>
+
+          <p>Comentários</p>
+
+          <div>
+
+
+
+            </section>
+</body>
+
+<comentarios>
+  <section class="notasComentarios">
+    <label for="Nota" class="textos">Avaliação</label>
+
+    <input type="range" id="nota" min="0" max="5" step="1" list="notas" class="nota">
+    <datalist id="notas">
+      <option value="0" label="0"></option>
+      <option value="1" label="1"></option>
+      <option value="2" label="2"></option>
+      <option value="3" label="3"></option>
+      <option value="4" label="4"></option>
+      <option value="5" label="5"></option>
+
+    </datalist>
+  </section>
+  <textarea type="text" name="Nome" size="100" placeholder="Deixe seu comentário" class="inputComentario"></textarea>
+  <div class="enviarWrapper"> <button id="enviar" type="submit">Enviar</button></div>
+</comentarios>
+
+</div>
+<div class="comentariosRegistrados" id="comentarioInternal">
+  <h4>Gabriela</h2>
+    Um almoço para se lembrar pelo ambiente, vista e uma comida que supera espectativas. Acrescente-se a isso um bom
+    atendimento.
+    Muito bom!
+
+    <div class="pontoCinematograficoRating">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <div class=""></div>
+    </div>
+</div>
+</div>
+
+
+
+</html>

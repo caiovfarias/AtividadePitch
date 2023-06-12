@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d3b84b1d10.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pontos Cinematográficos</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <nav>
+      <ul>
+        <a href="#" title="logo">
+          <div class="logo"> </div>
+        </a>
+        <li><a href="Index.html" id="botoesmenu"> Hotéis</a></li>
+        <li><a href="Cultura.html" id="botoesmenu"> Cultura</a></li>
+        <li><a href="Vida-Noturna.html" id="botoesmenu">Vida Noturna</a></li>
+        <li><a href="Gastronomia.html" id="botoesmenu"> Gastronomia</a></li>
+        <li><a href="#" id="botoesmenu">Acessibilidade</a>
+          <ul>
+            <li><button onclick="diminuoFonte()" id="botoesAcessibilidade">Diminuir Fontes</button></li>
+            <li><button onclick="aumentoFonte()" id="botoesAcessibilidade">Aumentar Fontes</button></li>
+            <li><button onclick="ligaContraste()" id="botoesAcessibilidade">Ligar Alto Contraste</button></li>
+            <li><button onclick="desligaContraste()" id="botoesAcessibilidade">Desligar Alto Contraste</button></li>
+            <li><button onclick="fonteAcessivel()" id="botoesAcessibilidade">Fonte Acessível</button></li>
+            <li><button onclick="fontePadrao()" id="botoesAcessibilidade">Fonte Padrão</button></li>
+          </ul>
+        </li>
+      </ul>
+      
+
+    </nav>
+  </header>
+
+  <div class="botaoControleFont funcoesAcessibilidade">
+    <button onclick="diminuoFonte()">Diminuir Fontes</button>
+
+    <button onclick="aumentoFonte()">Aumentar Fontes</button>
+  </div>
+
+
+  <div class="botaoControleCor funcoesAcessibilidade">
+    <button onclick="ligaContraste()">Liga Alto Contraste</button>
+
+    <button onclick="desligaContraste()">Desliga Alto Contraste</button>
+  </div>
+
+  <div class="botaoControleFonte funcoesAcessibilidade">
+    <button onclick="fonteAcessivel()">Altera para Fonte Acessível</button>
+
+    <button onclick="fontePadrao()">Altera para Fonte Padrão</button>
+  </div>
+
+  <div class="container">
+
+
+
+    <div class="main-container">
+
+      <h1>Sheraton São Paulo WTC Hotel
+      </h1>
+
+      <div class="pontosCinematograficos">
+
+
+        <div class="pontosCinematograficosItem" id="pontosCinematograficosInternal">
+          <section>
+            <div class="pontoCinematograficoImageInternal imageBanner1" id="internalImage"></div>
+          </section>
+          <section class="detailsSection">
+            <div class="pontoCinematograficoDetailsInternal">
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoTipoIcon tipoParque"></div>
+                <div class="pontoCinematograficoTipoText">Hotel</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Valor da diária:</span> $281,99</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Telefone:</span> +1 407-363-8000</div>
+              </div>
+
+              <div class="pontoCinematograficoTipo">
+                <div class="pontoCinematograficoText"><span>Público-alvo:</span> todos</div>
+              </div>
+
+              <div class="pontoCinematograficoAberto">
+                <div class="pontoCinematograficoAbertoIcon"></div>
+                <div class="pontoCinematograficoAbertoText">Aberto</div>
+              </div>
+
+              <div class="pontoCinematograficoAberto">
+                <div class="pontoCinematograficoPetIcon noPetIcon"></div>
+                <div class="pontoCinematograficoText">Pet Friendly</div>
+              </div>
+              <div class="pontoCinematograficoRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <div class=""></div>
+              </div>
+          </section>
+
+
+        </div>
+        <section class="imageGalery">
+          <galeria-imagens>
+            <img src="./images/Sheraton/img1.png" />
+            <img src="./images/Sheraton/img2.png" />
+            <img src="./images/Sheraton/img3.png" />
+            <img src="./images/Sheraton/img4.png" />
+            <img src="./images/Sheraton/img5.png" />
+            <img src="./images/Sheraton/img6.png" />
+          </galeria-imagens>
+        </section>
+
+
+        <div class="hotelContent" id="contentInternal">
+
+          <div class="hotelResumo" id="resumoInternal">
+
+
+            O Sheraton São Paulo WTC Hotel oferece 298 apartamentos com alto padrão de conforto e os melhores serviços
+            de hotelaria de luxo brasileira, além de ter as maiores suítes da categoria na região e mais de 60
+            apartamentos decorados por arquitetos renomados.
+
+            Além dos serviços premium oferecidos pelo hotel, como o Personal Closet, o Transient Lounge e o In Room
+            Fitness, o hóspede do Sheraton São Paulo WTC Hotel tem, à sua disposição as opções de restaurantes e bares,
+            à beira da piscina, no lobby ou no Private Table, um espaço exclusivo, ideal para um encontro de negócios ou
+            social diferenciado.
+
+            <p>Conveniências</p>
+            O hóspede do Sheraton, além do acesso direto ao WTC Events Center e WTC Business Tower, tem acesso, através
+            do Shopping D&D, a um corredor de serviços, onde encontrará gráfica rápida, bancos e câmbio, courier, ótica,
+            chaveiro, lotérica, drogaria, clínicas de estética e cabeleireiros e um mix de lojas diversas. Isso tudo sem
+            precisar sair à rua.
+
+
+            <p> Localização e mobilidade</p>
+            A localização estratégica, a apenas 6 km de distância do Aeroporto de Congonhas e a 35 km do Aeroporto
+            Internacional de Guarulhos, com fácil acesso às principais rodovias do estado, através da Av. das Nações
+            Unidas e Av. Bandeirantes, permite aos hóspedes se situarem facilmente na cidade.
+
+            A pequena distância até os melhores shopping centers (Iguatemi, Cidade Jardim, D&D Shopping, JK Iguatemi,
+            Vila Olímpia, Morumbi Shopping e Market Place), parques públicos (Ibirapuera, Burle Marx e Parque do Povo),
+            academia de tênis e ginástica, bares e restaurantes da cidade, adiciona várias possibilidades de lazer até
+            para os turistas que vêm a negócios.
+
+            A mobilidade fica garantida por vários modais de transporte. Quatro perfis de táxis (normal, especial, black
+            e blindado), duas locadoras de automóveis no subsolo do complexo WTC, heliponto próprio no topo do hotel e
+            fácil acesso a transporte público proporcionam a comodidade desejada.
+
+
+          </div>
+
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Sheraton%20S%C3%A3o%20Paulo%20WTC%20Hotel&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://putlocker-is.org"></a><br>
+
+            </div>
+          </div>
+          <section class="acesseSiteWrapper"> <a
+              href="https://www.marriott.com.br/hotels/travel/saosi-sheraton-sao-paulo-wtc-hotel/" target="_blank">
+              <div class="acesseSite">Acesse o Site</div>
+            </a></section>
+
+          <p>Comentários</p>
+
+          <div>
+      
+    
+    
+            </section>
+    </body>
+
+    <comentarios>
+      <section class="notasComentarios">
+      <label for="Nota" class="textos">Avaliação</label>
+
+      <input type="range" id="nota" min="0" max="5" step="1" list="notas" class="nota">
+      <datalist id="notas">
+        <option value="0" label="0"></option>
+        <option value="1" label="1"></option>
+        <option value="2" label="2"></option>
+        <option value="3" label="3"></option>
+        <option value="4" label="4"></option>
+        <option value="5" label="5"></option>
+
+      </datalist>
+    </section>
+            <textarea type="text" name="Nome" size="100" placeholder="Deixe seu comentário" class="inputComentario"></textarea>
+           <div class="enviarWrapper"> <button id="enviar" type="submit">Enviar</button></div>
+    </comentarios>
+            
+          </div>
+          <div class="comentariosRegistrados" id="comentarioInternal">
+            <h4>Caio</h2>
+              Atendimento dos funcionários, muito solícitos.
+              Serviço de quarto 24h.
+              Suítes novas e espaçosas
+              Academia muito boa.
+              O hotel possui um pequeno shopping em anexo
+              para os turistas que vêm a negócios.
+
+              <div class="pontoCinematograficoRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <div class=""></div>
+              </div>
+          </div>
+        </div>
+
+ 
+
+</html>
